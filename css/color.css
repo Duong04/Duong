@@ -1,0 +1,254 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --main-black-color: #111;
+    --main-yellow-color: #ffb400;
+    --text-black-color: #666;
+    --text-white-color: #fff;
+    --grey-color: #2b2a2a;
+    --border-box-color: #252525;
+    --light-grey-color: #eee;
+    --text--white: color: hsla(0, 0%, 100%, .8);
+}
+
+::selection {
+    background-color: var(--main-yellow-color);
+    color: var(--text-white-color);
+}
+
+body.light-mode {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition: all ease 0.4s;
+}
+
+body.dark-mode {
+    background-color: var(--main-black-color);
+    color: var(--white-color);
+    transition: all ease 0.4s;
+}
+
+.dark-mode .btn__dark-light {
+    background-color: #484848;
+    color: var(--white-color);
+    transition: all ease 0.2s;
+}
+
+.light-mode .btn__dark-light {
+    background-color: var(--light-grey-color);
+    color: var(--text-black-color);
+    transition: all ease 0.2s;
+}
+
+.dark-mode .menu__link i {
+    background-color: var(--text-black-color);
+    transition: all ease 0.2s;
+}
+
+.dark-mode .about__block,
+.dark-mode .home__block {
+    background-color: var(--main-yellow-color); 
+    transition: all ease 0.2s;  
+}
+
+.dark-mode .home__item--img {
+    background-color: var(--black-color);
+    transition: all ease 0.2s;
+}
+
+.dark-mode .contact__form--item textarea,
+.dark-mode .contact__form--item input,
+.dark-mode .modal__info ul span,
+.dark-mode .blog__card--body h3,
+.dark-mode .contact__left>ul>li div p,
+.dark-mode .contact__left>ul>li div a,
+.dark-mode .contact__left>ul>li div span,
+.dark-mode .about__text h5,
+.dark-mode .about__item>h3,
+.dark-mode .call-to-action,
+.dark-mode .about__left--item li>span,
+.dark-mode .about__left--item li>a,
+.dark-mode .about-title h3,
+.dark-mode .menu__link,
+.dark-mode .home__item--text a,
+.dark-mode .home__item--text p {
+    color: var(--text-white-color);
+    transition: all ease 0.2s;
+}
+
+.dark-mode .about__left--item li {
+    color: var(--text-black-color);
+    transition: all ease 0.2s;
+}
+
+.dark-mode .about__box>div>span {
+    background-color: var(--white-color);
+    transition: all ease 0.2s;
+}
+
+.dark-mode .contact__social a {
+    color: var(--text-white-color);
+    background-color: var(--grey-color);
+    transition: all ease 0.2s;
+}
+
+.dark-mode .about__text h6,
+.dark-mode .contact__form--item textarea,
+.dark-mode .contact__form--item input {
+    background-color: var(--border-box-color);
+    transition: all ease 0.2s;
+}
+
+.dark-mode .modal__item,
+.dark-mode .blog__card--body {
+    background-color: var(--grey-color);
+    transition: all ease 0.2s;
+}
+
+.dark-mode .modal__text h1,
+.dark-mode .modal__text h2,
+.dark-mode .modal__text h3,
+.dark-mode .modal__text h4,
+.dark-mode .modal__text h5,
+.dark-mode .modal__text h6,
+.dark-mode .modal__text p,
+.dark-mode .modal__text ul,
+.dark-mode .modal__text ol,
+.dark-mode .modal__text a,
+.dark-mode .blog__card--text {
+    color: var(--text--white) !important;
+}
+
+.dark-mode .blog__title>span, 
+.dark-mode .contact__title>span, 
+.dark-mode .portfolio__title>span, 
+.dark-mode .about__title>span {
+    color: hsla(0, 0%, 100%, .07);
+}
+
+.dark-mode .Basic {
+    border-color: var(--main-yellow-color) var(--border-box-color) var(--border-box-color) var(--border-box-color);
+}
+
+.dark-mode .Intermediate {
+    border-color: var(--main-yellow-color) var(--main-yellow-color) var(--border-box-color) var(--border-box-color);
+}
+
+.dark-mode .Advanced {
+    border-color: var(--main-yellow-color) var(--main-yellow-color) var(--main-yellow-color) var(--border-box-color);
+}
+
+.dark-mode .Expert {
+    border-color: var(--main-yellow-color);
+}
+
+.dark-mode .card-body p {
+    color: var(--black-color);
+}
+
+.light-mode .menu__link i {
+    background-color: var(--light-grey-color);
+    transition: all ease 0.2s;
+}
+
+.light-mode .about__block,
+.light-mode .home__block {
+    background-color: var(--main-yellow-color);
+    transition: all ease 0.2s;   
+}
+
+.light-mode .home__item--img {
+    background-color: var(--black-color);
+    transition: all ease 0.2s;
+}
+
+
+.light-mode .contact__form--item textarea,
+.light-mode .contact__form--item input,
+.light-mode .modal__info ul span,
+.light-mode .blog__card--body h3,
+.light-mode .contact__left>ul>li div p,
+.light-mode .contact__left>ul>li div a,
+.light-mode .contact__left>ul>li div span,
+.light-mode .about__text h5,
+.light-mode .about__item>h3,
+.light-mode .call-to-action,
+.light-mode .about__left--item li>span,
+.light-mode .about__left--item li>a,
+.light-mode .about-title h3,
+.light-mode .menu__link,
+.light-mode .home__item--text a,
+.light-mode .home__item--text p {
+    color: var(--text-black-color);
+    transition: all ease 0.2s;
+}
+
+.light-mode .about__left--item li {
+    color: var(--text-black-color);
+    transition: all ease 0.2s;
+}
+
+.light-mode .about__box>div>span {
+    background-color: var(--text-black-color);
+    transition: all ease 0.2s;
+}
+
+.light-mode .contact__social a {
+    color: var(--text-black-color);
+    background-color: var(--light-grey-color);
+    transition: all ease 0.2s;
+}
+
+.light-mode .contact__form--item textarea,
+.light-mode .contact__form--item input {
+    background-color: var(--white-color);
+    border: 1px solid #ccc;
+    transition: all ease 0.2s;
+}
+
+.light-mode .modal__item {
+    background-color: var(--white-color);
+    transition: all ease 0.2s;
+}
+
+.light-mode .about__text h6,
+.light-mode .blog__card--body {
+    background-color: #f5f8fc;
+}
+
+.light-mode .modal__text,
+.light-mode .blog__card--text {
+    color: #454545;
+}
+
+.light-mode .about__image {
+    border-color: var(--white-color);
+    transition: all ease 0.2s;
+}
+
+.light-mode .modal__close {
+    color: var(--white-color);
+}
+
+.light-mode .Basic {
+    border-color: var(--main-yellow-color) var(--light-grey-color) var(--light-grey-color) var(--light-grey-color);
+}
+
+.light-mode .Intermediate {
+    border-color: var(--main-yellow-color) var(--main-yellow-color) var(--light-grey-color) var(--light-grey-color);
+}
+
+.light-mode .Advanced {
+    border-color: var(--main-yellow-color) var(--main-yellow-color) var(--main-yellow-color) var(--light-grey-color);
+}
+
+.light-mode .Expert {
+    border-color: var(--main-yellow-color);
+}
+
+.light-mode .blog__title>span, 
+.light-mode .contact__title>span, 
+.light-mode .portfolio__title>span, 
+.light-mode .about__title>span {
+    color: rgba(30, 37, 48, .07);
+}
