@@ -44,7 +44,7 @@
             <h1 class="wow fadeInUp" data-wow-delay="0.4s">WEB DEVELOPER</h1>\r
             <p class="wow fadeInUp" data-wow-delay="0.5s">Coding with passion and a commitment to constant growth, as a web developer, I strive to create the finest online experiences. Every line of code is art, every project an opportunity to bring ideas to life.</p>\r
             <div class="home__btn">\r
-                <a class="call-to-action wow fadeInUp" data-wow-delay="0.6s" href="">\r
+                <a class="call-to-action wow fadeInUp" data-wow-delay="0.6s" href="/about" data-navigo>\r
                     <span>MORE ABOUT ME</span>\r
                     <i class="fa-solid fa-arrow-right"></i>\r
                 </a>\r
