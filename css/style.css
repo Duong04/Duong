@@ -824,6 +824,7 @@ button.call-to-action {
     padding:40px 0; 
     background:#fff; 
     font-family: 'Arvo', serif;
+    height: 100vh;
 }
 
 .page_404  img { 

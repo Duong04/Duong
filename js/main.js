@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let status = localStorage.getItem('darkLight');
 
-    if (status === "true") { 
-        body.classList.remove('light-mode');
-        body.classList.add('dark-mode');
-        document.querySelector('.fa-moon').className = 'fa-regular fa-sun';
-    } else {
+    if (status === "false") { 
         body.classList.remove('dark-mode');
         body.classList.add('light-mode');
         document.querySelector('.fa-sun').className = 'fa-regular fa-moon';
+    } else {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        document.querySelector('.fa-moon').className = 'fa-regular fa-sun';
     }
 });
 
