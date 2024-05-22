@@ -853,8 +853,58 @@ button.call-to-action {
     margin: 20px 0;
     display: inline-block;
 }
+
 .contant_box_404{
     margin-top:-50px;
+}
+
+.placeholder {
+    position: relative;
+    overflow: hidden;
+}
+  
+.placeholder:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    left: -100px;
+    top: 0;
+    z-index: 2;
+    background: linear-gradient(to right, transparent, #ffffff70, transparent);
+    animation: reflect 800ms ease-out infinite;
+}
+
+.placeholder::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ccc;
+}
+
+.bg-ccc {
+    background-color: #ccc;
+}
+  
+.title {
+    width: 80%;
+    min-height: 20px;
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 100%;
+    min-height: 60px;
+}
+
+@keyframes reflect {
+  to {
+    left: calc(100% + 100px);
+  }
 }
 
 @keyframes moveDown {
