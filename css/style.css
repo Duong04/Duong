@@ -858,12 +858,13 @@ button.call-to-action {
     margin-top:-50px;
 }
 
-.placeholder {
+.placeholder-2 {
     position: relative;
     overflow: hidden;
+    background-color: #ccc;
 }
   
-.placeholder:after {
+.placeholder-2:after {
     content: "";
     position: absolute;
     height: 100%;
@@ -872,10 +873,10 @@ button.call-to-action {
     top: 0;
     z-index: 2;
     background: linear-gradient(to right, transparent, #ffffff70, transparent);
-    animation: reflect 800ms ease-out infinite;
+    animation: reflect 700ms ease-out infinite;
 }
 
-.placeholder::before {
+.placeholder-2::before {
     content: '';
     position: absolute;
     z-index: 1;
@@ -886,10 +887,6 @@ button.call-to-action {
     background-color: #ccc;
 }
 
-.bg-ccc {
-    background-color: #ccc;
-}
-  
 .title {
     width: 80%;
     min-height: 20px;
