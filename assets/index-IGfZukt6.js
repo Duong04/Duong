@@ -1755,7 +1755,7 @@
 \r
                     <p>the page you are looking for not avaible!</p>\r
 \r
-                    <a href="/" class="link_404">Go to Home</a>\r
+                    <a href="/" class="link_404" data-navigo>Go to Home</a>\r
                 </div>\r
                 </div>\r
             </div>\r
