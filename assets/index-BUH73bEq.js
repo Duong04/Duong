@@ -78,28 +78,28 @@
             </div>\r
             <div class="about__right">\r
                 <div class="about__box wow fadeInUp" data-wow-delay="0.4s">\r
-                    <h1>2<sup>+</sup></h1>\r
+                    <h1><span class="count">2</span><sup>+</sup></h1>\r
                     <div>\r
                         <span></span>\r
                         <p>YEARS OF <span>EXPERIENCE</span></p>\r
                     </div>\r
                 </div>\r
                 <div class="about__box wow fadeInUp" data-wow-delay="0.4s">\r
-                    <h1>15<sup>+</sup></h1>\r
+                    <h1><span class="count">15</span><sup>+</sup></h1>\r
                     <div>\r
                         <span></span>\r
                         <p>COMPLETED <span>PROJECTS</span></p>\r
                     </div>\r
                 </div>\r
                 <div class="about__box wow fadeInUp" data-wow-delay="0.4s">\r
-                    <h1>99<sup>+</sup></h1>\r
+                    <h1><span class="count">99</span><sup>+</sup></h1>\r
                     <div>\r
                         <span></span>\r
                         <p>HAPPY <span>CUSTOMERS</span></p>\r
                     </div>\r
                 </div>\r
                 <div class="about__box wow fadeInUp" data-wow-delay="0.4s">\r
-                    <h1>3<sup>+</sup></h1>\r
+                    <h1><span class="count">3</span><sup>+</sup></h1>\r
                     <div>\r
                         <span></span>\r
                         <p>AWARDS <span>WON</span></p>\r
@@ -3127,7 +3127,7 @@ Content-Type: `+h.contentType+`\r
             <li>Phone: <a href="tel:${s}">+84 ${s}</a></li>
             <li>Telegram: <span> ${l}</span></li>
         </ul>
-        <ul class="wow fadeInUp" data-wow-delay="0.5s">
+        <ul class="wow fadeInUp" data-wow-delay="0.4s">
             <li>Last Name: <span>${t}</span></li>
             <li>Nationality: <span>${d}</span></li>
             <li>Address: <span>${u}</span></li>
@@ -3233,4 +3233,4 @@ Content-Type: `+h.contentType+`\r
             ${t}
         </div>
     </div>
-    `,hg=async e=>{const t=document.querySelector(".modal");t.style.display="block";const n=await S.get(`/blogs/${e}.json`),r=mg(n.data);document.querySelector(".btn__dark-light").style.display="none",document.querySelector(".modal__item").innerHTML=r},bg=()=>{document.querySelectorAll(".show-detail").forEach(t=>{t.onclick=function(){const n=this.id;hg(n)}})},gg=async()=>{const t=(await S.get("/blogs.json")).data;let n="";for(const r in t)Object.hasOwnProperty.call(t,r)&&(n+=pg(t[r],r));document.getElementById("posts").innerHTML=n},vg=async()=>{await gg(),bg()},ce=document.querySelector("#app");pd.on("/",()=>{le(hd(),ce),Et("/")}).on("/about",()=>{le(gd(),ce),Et("/about"),rg()}).on("/portfolio",()=>{le(wd(),ce),fg(),Ad(),Et("/portfolio")}).on("/contact",()=>{le(_d(),ce),Et("/contact")}).on("/blog",()=>{le(kd(),ce),Cd(),vg(),Et("/blog")}).on("login",()=>{le(Id(),ce)}).on("/admin/dashboard",()=>{le(Pd(),ce),Hd(),ot()}).on("/admin/profile",async()=>{le(Bd(),ce),ot(),await _b()}).on("/admin/experience-education",()=>{le(Ld(),ce),ot(),Ib()}).on("/admin/project",()=>{le(Dd(),ce),ot(),Hb()}).on("/admin/categories",()=>{le($d(),ce),ot(),jb()}).on("/admin/blog",()=>{le(Fd(),ce),ot(),Jb()}).notFound(()=>{le(Ud,ce),document.addEventListener("DOMContentLoaded",()=>{document.querySelector(".dark-mode").classList.remove("dark-mode"),document.querySelector("body").classList.add("light-mode")}),document.querySelector(".btn__dark-light").style.display="none"}).resolve();
+    `,hg=async e=>{const t=document.querySelector(".modal");t.style.display="block";const n=await S.get(`/blogs/${e}.json`),r=mg(n.data);document.querySelector(".btn__dark-light").style.display="none",document.querySelector(".modal__item").innerHTML=r},bg=()=>{document.querySelectorAll(".show-detail").forEach(t=>{t.onclick=function(){const n=this.id;hg(n)}})},gg=async()=>{const t=(await S.get("/blogs.json")).data;let n="";for(const r in t)Object.hasOwnProperty.call(t,r)&&(n+=pg(t[r],r));document.getElementById("posts").innerHTML=n},vg=async()=>{await gg(),bg()},wg=()=>{Number.prototype.format=function(e){var t=new RegExp("\\d(?=(\\d{3})+"+(e>0?"\\.":"$")+")","g");return this.toFixed(Math.max(0,Math.floor(e))).replace(t,"$&,")},$(".count").each(function(){$(this).prop("counter",0).animate({counter:$(this).text()},{duration:6e3,easing:"easeOutExpo",step:function(e){$(this).text(""+e.format())}})})},yg=()=>{wg()},ce=document.querySelector("#app");pd.on("/",()=>{le(hd(),ce),Et("/")}).on("/about",()=>{le(gd(),ce),Et("/about"),rg(),yg()}).on("/portfolio",()=>{le(wd(),ce),fg(),Ad(),Et("/portfolio")}).on("/contact",()=>{le(_d(),ce),Et("/contact")}).on("/blog",()=>{le(kd(),ce),Cd(),vg(),Et("/blog")}).on("login",()=>{le(Id(),ce)}).on("/admin/dashboard",()=>{le(Pd(),ce),Hd(),ot()}).on("/admin/profile",async()=>{le(Bd(),ce),ot(),await _b()}).on("/admin/experience-education",()=>{le(Ld(),ce),ot(),Ib()}).on("/admin/project",()=>{le(Dd(),ce),ot(),Hb()}).on("/admin/categories",()=>{le($d(),ce),ot(),jb()}).on("/admin/blog",()=>{le(Fd(),ce),ot(),Jb()}).notFound(()=>{le(Ud,ce),document.addEventListener("DOMContentLoaded",()=>{document.querySelector(".dark-mode").classList.remove("dark-mode"),document.querySelector("body").classList.add("light-mode")}),document.querySelector(".btn__dark-light").style.display="none"}).resolve();
